@@ -1,0 +1,48 @@
+$table-border: 1px solid $gray;
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td,
+    th {
+        padding: 0.5rem 0;
+        border-bottom: $table-border;
+    }
+
+    &.is-striped {
+        tbody {
+            tr:nth-child(odd) {
+                background-color: $gray-xxs;
+            }
+        }
+    }
+
+    &.is-hover {
+        tbody {
+            tr:hover {
+                background-color: $gray-xs;
+            }
+        }
+    }
+
+    &.is-bordered {
+        border: $table-border;
+
+        td,
+        th {
+            border: $table-border;
+        }
+    }
+
+    // Scollable tables
+    &.is-scroll {
+        display: block;
+        padding-bottom: 0.75rem;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

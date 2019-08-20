@@ -1,0 +1,136 @@
+<section class="main-section" id="typography-section">
+    <h2>Typograghy 文字与段落</h2>
+
+    <div class="sub-section">
+        <h3>Headling 标题</h3>
+        <h1 class="h1">H1 Heading 标题 #1 42px</h1>
+        <h2 class="h2">H2 Heading 标题 #2 28px</h2>
+        <h3 class="h3">H3 Heading 标题 #3 22px</h3>
+        <h4 class="h4">H4 Heading 标题 #4 16px</h4>
+        <h5 class="h5">H5 Heading 标题 #5 14px</h5>
+        <h6 class="h6">H6 Heading 标题 #6 12px</h6>
+        <pre><code class="html">&lt;h1 class="h1"&gt;...&lt;/h1&gt;<br>&lt;h2 class="h2"&gt;...&lt;/h2&gt;</code></pre>
+    </div>
+
+    <div class="sub-section">
+        <h3>Paragraphs 段落</h3>
+        <p>
+            Lorem ipsum dolor <abbr title="STUPID">sit amet</abbr>,
+            <a href="javascript:;">consectetur</a> adipisicing elit, sed do eiusmod tempor
+            <strong>incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <i>Duis aute irure dolor</i> in reprehenderit in <em>voluptate velit esse</em> cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est <b>laborum</b>.
+        </p>
+        <p>
+            曲曲折折的<abbr title="STUPID">荷塘上面</abbr>，
+            <a href="javascript:;">弥望的是田田的叶子</a>。 叶子出水很高，像亭亭的舞女的裙。
+            层层的叶子中间，零星地点缀着些白花，<i>有袅娜地开着的，有羞涩地打着朵儿的；</i>
+            正如一粒粒的明珠，又如碧天里的星星，又如刚<b>出浴的美人</b>。
+            微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。
+            这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。
+            叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。
+            叶子底下是脉脉的流水，遮住了，不能见一些颜色；而叶子却更见风致了。
+        </p>
+        <pre><code class="html">&lt;p&gt;...&lt;/p&gt;</code></pre>
+    </div>
+
+    <div class="sub-section">
+        <h3>Blockquote 引用</h3>
+        <blockquote>
+            <p>
+                The advance of technology is based on making it fit in so that you don't really even
+                notice it, so it's part of everyday life.
+            </p>
+            <cite>- Bill Gates</cite>
+        </blockquote>
+        <blockquote>
+            <p>黑夜给了我黑色的眼睛，我却用它寻找光明。- 顾城</p>
+        </blockquote>
+        <pre><code class="html">&lt;blockquote&gt;&lt;p&gt;黑夜...&lt;/p&gt;&lt;cite&gt;- 顾城&lt;/cite&gt;&lt;/blockquote&gt;</code></pre>
+    </div>
+
+    <div class="sub-section">
+        <h3>ul > li & ol > li 列表</h3>
+        <div class="columns is-gapped">
+            <div class="column col-4">
+                <ul>
+                    <li>list item 1</li>
+                    <li>
+                        list item 2
+                        <ul>
+                            <li>list item 2.1</li>
+                            <li>list item 2.2</li>
+                            <li>list item 2.3</li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">list item 3</a></li>
+                </ul>
+                <pre><code class="html">&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</code></pre>
+            </div>
+            <div class="column col-4">
+                <ul class="is-unstyled">
+                    <li>list item 1</li>
+                    <li>
+                        list item 2
+                        <ul class="is-unstyled">
+                            <li>list item 2.1</li>
+                            <li>list item 2.2</li>
+                            <li>list item 2.3</li>
+                        </ul>
+                    </li>
+                    <li>list item 3</li>
+                </ul>
+                <pre><code class="html">&lt;ul class="is-unstyled"&gt;&lt;/ul&gt;</code></pre>
+            </div>
+            <div class="column col-4">
+                <ol class="is-big">
+                    <li>list item 1</li>
+                    <li>
+                        list item 2
+                        <ol>
+                            <li>list item 2.1</li>
+                            <li><a href="javascript:;">list item 2.2</a></li>
+                            <li>list item 2.3</li>
+                        </ol>
+                    </li>
+                    <li>list item 3</li>
+                </ol>
+                <pre><code class="html">&lt;ol class="is-big"&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-section">
+        <h3>Code 代码</h3>
+        <pre><code class="haskell">qsort x:xs = (qsort [x|x <- xs, x <= x]) ++ x ++ (qsort [x|x <- xs, x > x])</code></pre>
+        <pre><code class="pug">pre > code.haskell ...</code></pre>
+    </div>
+
+    <div class="sub-section">
+        <h3>Modifiers 一些有用的装饰</h3>
+        <div class="columns">
+            <div class="column col-12">
+                <p>
+                    normal p tag with
+                    <a href="javascript:;" class="is-muted">muted A tag / 淡然链接</a> OR
+                    <a href="javascript:;">本原链接</a>
+                </p>
+
+                <p class="is-muted">
+                    muted P tag with
+                    <a href="javascript:;" class="is-muted"></a> OR
+                    <a href="javascript:;">本原链接</a>
+                </p>
+
+                <p class="is-large">Large P Tag 一个很大很大</p>
+                <p class="is-big">Big P Tag 一个很大</p>
+                <p>Just a P tag 一个很正常</p>
+                <p class="is-small">Small P Tag 一个很小</p>
+                <p class="is-centered">Centered P Tag 一个居中</p>
+            </div>
+        </div>
+        <pre><code class="pug">p.is-muted<br>a.is-muted<br>p.is-large<br>p.is-big<br>p.is-small<br>p.is-centered</code></pre>
+    </div>
+</section>

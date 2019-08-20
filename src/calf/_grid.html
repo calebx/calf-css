@@ -1,0 +1,38 @@
+<section class="main-section" id="grid-section">
+    <h2>Layout 排版</h2>
+    
+    <div class="sub-section">
+        <h3>Default Grids</h3>
+        <div class="columns">
+            <div class="column col-6"><div class="column-card">col-6</div></div>
+            <div class="column col-3"><div class="column-card">col-3</div></div>
+            <div class="column col-2"><div class="column-card">col-2</div></div>
+            <div class="column col-1"><div class="column-card">col-1</div></div>
+        </div>
+        <pre><code class="pug">div.columns > div.column.col-6</code></pre>
+    </div>
+
+    <div class="sub-section">
+        <h3>Grids with Gap 有间距的栅格</h3>
+        <div class="columns is-gapped">
+            <div class="column col-6"><div class="column-card">col-6</div></div>
+            <div class="column col-3"><div class="column-card">col-3</div></div>
+            <div class="column col-2"><div class="column-card">col-2</div></div>
+            <div class="column col-1"><div class="column-card">col-1</div></div>
+        </div>
+        <pre><code class="pug">div.columns.is-gapped > div.column.col-6 + div.column.col-3 + div.column.col-2 + div.column.col-1 </code></pre>
+    </div>
+
+    <div class="sub-section">
+        <h3>Nowrap 不换行的栅格</h3>
+        <div class="columns is-nowrap">
+            <div class="column col-6"><div class="column-card">col-6</div></div>
+            <div class="column col-3"><div class="column-card">col-3</div></div>
+            <div class="column col-2"><div class="column-card">col-2</div></div>
+            <div class="column col-1"><div class="column-card">col-1</div></div>
+            <div class="column col-1"><div class="column-card">col-1</div></div>
+            <div class="column col-2"><div class="column-card">col-2</div></div>
+        </div>
+        <pre><code class="pug">div.columns.is-nowrap > div.column.col-6</code></pre>
+    </div>
+</section>

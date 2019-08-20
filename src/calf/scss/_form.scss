@@ -1,0 +1,237 @@
+$input-font-size-l: 1.5rem;
+$input-font-size: 1.125rem;
+$input-font-size-s: 1rem;
+
+$input-height-l: 3.5rem;
+$input-height: 2.5rem;
+$input-height-s: 2.25rem;
+
+$input-padding-lr: 0.5rem;
+
+$input-background-color: $white;
+$input-border-color: $gray;
+
+$inline-form-group-label-width: 10rem;
+
+fieldset {
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid $gray-l;
+}
+
+legend {
+    position: relative;
+    top: 2px;
+    margin-left: -1rem;
+    padding: 0 1rem;
+    color: $gray-xxl;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 0;
+}
+
+label {
+    display: block;
+    color: $black-s;
+    font-family: $head-font-family;
+
+    &.checkbox,
+    &.radio {
+        display: inline-block;
+        margin-right: 1rem;
+        font-family: $body-font-family;
+        cursor: pointer;
+    }
+
+    .description {
+        font-family: $body-font-family;
+    }
+}
+
+textarea {
+    height: auto;
+    padding: $input-padding-lr;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+select {
+    padding: 0 $input-font-size + $input-padding-lr 0 $input-padding-lr;
+    font-size: $input-font-size * 0.9;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12"><path fill="rgba(0, 0, 0, .4)" d="M0.722,4.823L-0.01,4.1,4.134-.01,4.866,0.716Zm7.555,0L9.01,4.1,4.866-.01l-0.732.726ZM0.722,7.177L-0.01,7.9,4.134,12.01l0.732-.726Zm7.555,0L9.01,7.9,4.866,12.01l-0.732-.726Z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right $input-padding-lr center;
+    -webkit-appearance: none;
+}
+
+input,
+textarea {
+    padding: 0 $input-padding-lr;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    height: $input-height;
+    font-size: $input-font-size;
+    line-height: $input-height;
+    vertical-align: middle;
+    background-color: $input-background-color;
+    border: $border-width-thin solid $input-border-color;
+    border-radius: $border-radius;
+    outline: none;
+
+    &:focus {
+        border-color: lighten($primary-color, 50%);
+        outline: none;
+
+        @include box-inset-shadow();
+    }
+
+    &:disabled {
+        color: $gray-xl;
+        background-color: $gray-xs;
+        cursor: not-allowed;
+        opacity: 0.75;
+    }
+}
+
+input[type="file"] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    position: relative;
+    bottom: 0.175rem;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+form {
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    button,
+    input[type="submit"] {
+        margin-right: 1rem;
+    }
+
+    .description {
+        margin-top: 0;
+        color: $gray-xl;
+        font-size: 0.9rem;
+        vertical-align: baseline;
+    }
+}
+
+// inline form group
+// inline form with inline label & inline field
+form.is-inline {
+    label {
+        display: inline-block;
+        width: $inline-form-group-label-width - 1rem;
+        margin-right: 1rem;
+        line-height: $input-height;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    input,
+    textarea,
+    select {
+        display: inline-block;
+        width: auto;
+    }
+
+    .form-checkboxes,
+    .form-radios {
+        .checkbox,
+        .radio {
+            width: auto;
+        }
+    }
+
+    .form-buttons {
+        margin-left: $inline-form-group-label-width;
+    }
+
+    .form-group {
+        display: flex;
+
+        &.is-inline {
+            display: inline-block;
+            margin-right: 1rem;
+
+            label {
+                width: auto;
+                margin-right: 0.5rem;
+            }
+
+            &.form-buttons {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@mixin form-group-size($input-height: $input-height, $input-font-size: $input-font-size, $input-padding-lr: $input-padding-lr) {
+    input,
+    textarea,
+    select {
+        height: $input-height;
+        padding: 0 $input-padding-lr;
+        font-size: $input-font-size;
+        line-height: $input-height;
+    }
+
+    &.is-inline {
+        label {
+            line-height: $input-height;
+        }
+    }
+
+    textarea {
+        padding: $input-padding-lr;
+    }
+
+    select {
+        padding-right: $input-font-size + $input-padding-lr;
+        font-size: $input-font-size * 0.9;
+        background-position: right $input-padding-lr center;
+    }
+
+    button,
+    input[type="submit"] {
+        height: $input-height;
+        font-size: $input-font-size;
+        line-height: $input-height;
+    }
+}
+
+$input-height-l: 3.5rem;
+$input-height-s: 2.25rem;
+$input-font-size-l: 1.5rem;
+$input-font-size-s: 1rem;
+$input-padding-lr-l: 0.5rem;
+$input-padding-lr-s: 0.5rem;
+
+.form-group.is-big {
+    @include form-group-size($input-height-l, $input-font-size-l, $input-padding-lr-l);
+}
+
+.form-group.is-small {
+    @include form-group-size($input-height-s, $input-font-size-s, $input-padding-lr-s);
+}

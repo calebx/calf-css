@@ -1,0 +1,38 @@
+{
+  "name": "calf-css",
+  "version": "0.0.1",
+  "description": "calf style only",
+  "private": true,
+  "author": "caleb.xiang",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "lint": "stylelint ./src/calf/scss/*.scss"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/node": "^10.14.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^18.2.0",
+    "typescript": "^3.2.1",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

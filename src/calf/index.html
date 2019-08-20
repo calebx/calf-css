@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <script
+            crossorigin="anonymous"
+            src="https://lib.baomitu.com/highlight.js/9.14.1/highlight.min.js"
+        ></script>
+        <script
+            crossorigin="anonymous"
+            src="https://lib.baomitu.com/highlight.js/9.14.1/languages/haskell.min.js"
+        ></script>
+        <link
+            crossorigin="anonymous"
+            href="https://lib.baomitu.com/highlight.js/9.14.1/styles/github-gist.min.css"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+SC" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="page">
+            <aside class="sidebar">
+                <nav class="sidebar-menu">
+                    <h2 class="is-centered">calf only</h2>
+                    <ul class="is-unstyled is-big">
+                        <li><a href="#color-section">color</a></li>
+                        <li><a href="#typography-section">typography</a></li>
+                        <li><a href="#grid-section">grid</a></li>
+                        <li><a href="#table-section">table</a></li>
+                        <li><a href="#button-section">button</a></li>
+                        <li><a href="#form-section">form</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="main">
+                <article class="page-content">
+                    <div class="logo-section">
+                        <img src="${ require('./assets/calf_logo.png') }" width="210" height="124" alt="logo" class="logo"/>
+                    </div>
+
+                    ${ require('html-loader!./_color.html') }
+                    ${ require('html-loader!./_typography.html') }
+                    ${ require('html-loader!./_grid.html') }
+                    ${ require('html-loader!./_table.html') }
+                    ${ require('html-loader!./_button.html') }
+                    ${ require('html-loader!./_form.html') }
+                </article>
+            </main>
+        </div>
+    </body>
+</html>

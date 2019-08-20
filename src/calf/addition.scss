@@ -1,0 +1,107 @@
+@import "./scss/color";
+
+.page {
+    display: flex;
+    min-height: 100vh;
+
+    .sidebar {
+        flex: 0 0 15rem;
+        background: $gray-xs;
+    }
+
+    .main {
+        flex: 1 1 auto;
+    }
+}
+
+.sidebar-menu {
+    position: sticky;
+    top: 1rem;
+
+    ul > li {
+        margin: 0.5rem 1rem;
+        a {
+            border-bottom: none;
+        }
+    }
+}
+
+.page-content {
+    padding: 1.5rem 3rem;
+}
+
+.logo-section {
+    line-height: 1;
+    
+    .logo {
+        display: inline-block;
+    }
+}
+
+.sub-section {
+    border-top: 2px dotted lighten($blue, 50%);
+    margin-bottom: 2rem;
+}
+
+// color demo card
+.color-card {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 4px;
+
+    &.bg-red {
+        background: $red;
+    }
+    &.bg-green {
+        background: $green;
+    }
+    &.bg-blue {
+        background: $blue;
+    }
+    &.bg-black {
+        background: $black;
+    }
+    &.bg-black-s {
+        background: $black-s;
+    }
+    &.bg-white {
+        background: $white;
+    }
+    &.bg-gray-xxs {
+        background: $gray-xxs;
+    }
+    &.bg-gray-xs {
+        background: $gray-xs;
+    }
+    &.bg-gray-s {
+        background: $gray-s;
+    }
+    &.bg-gray {
+        background: $gray;
+    }
+    &.bg-gray-l {
+        background: $gray-l;
+    }
+    &.bg-gray-xl {
+        background: $gray-xl;
+    }
+    &.bg-gray-xxl {
+        background: $gray-xxl;
+    }
+}
+
+// layout demo card
+.column-card {
+    padding: 1rem;
+    background: lighten($blue, 50%);
+
+    .columns > .col-3 & {
+        background: lighten($red, 33%);
+    }
+    .columns > .col-2 & {
+        background: lighten($green, 33%);
+    }
+    .columns > .col-1 & {
+        background: lighten($black-s, 50%);
+    }
+}

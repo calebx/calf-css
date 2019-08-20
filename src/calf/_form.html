@@ -1,0 +1,236 @@
+<section class="main-section" id="form-section">
+    <h2>Form 表单</h2>
+
+    <div class="sub-section">
+        <h3>Base 基础表单</h3>
+
+        <form autocomplete="off">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+            </div>
+
+            <div class="form-group">
+                <label>Country</label>
+                <select>
+                    <option value="1">Default</option>
+                    <option value="2">OptionA</option>
+                    <option value="3">OptionB</option>
+                </select>
+            </div>
+
+            <div class="form-group form-checkboxes">
+                <label class="checkbox"><input type="checkbox" />Check Me</label>
+                <label class="checkbox"><input type="checkbox" />Check You</label>
+                <label class="checkbox"><input type="checkbox" />Check Him</label>
+            </div>
+
+            <div class="form-group form-radios">
+                <label class="checkbox"><input type="radio" />radio me</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+                <label class="checkbox"><input type="radio" />radio him</label>
+            </div>
+
+            <div class="form-group">
+                <label>Interface</label>
+                <textarea rows="6"></textarea>
+            </div>
+
+            <div class="form-group form-buttons">
+                <button class="button">Log in</button>
+                <input type="submit" class="button is-hollow" value="Cancel" />
+            </div>
+        </form>
+    </div>
+
+    <div class="sub-section">
+        <h3>Fieldset & Legend 区块与标题</h3>
+        <form method="post" action="">
+            <fieldset>
+                <legend>Login data</legend>
+                <div class="form-group">
+                    <label for="text">
+                        <span>City 城市</span>
+                        <span class="description">小小的城市</span>
+                    </label>
+                    <input type="text" name="name" />
+                    <p class="description">This information helps us deliver orders on time.</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="phone" name="phone" disabled value="123-123-1234" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="sub-section">
+        <h3>small & BIG 大大小小</h3>
+
+        <form method="post" action="">
+            <fieldset>
+                <legend>Login data</legend>
+                <div class="form-group is-big">
+                    <label>BIG Name</label>
+                    <input class="is-small" type="text" name="name" />
+                </div>
+                <div class="form-group is-big">
+                    <label>BIG Country</label>
+                    <select class="is-small">
+                        <option value="1">Default</option>
+                        <option value="2">OptionA</option>
+                        <option value="3">OptionB</option>
+                    </select>
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label>Normal Phone</label>
+                    <input class="is-big" type="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                    <label>Normal Country</label>
+                    <select class="is-big">
+                        <option value="1">Default</option>
+                        <option value="2">OptionA</option>
+                        <option value="3">OptionB</option>
+                    </select>
+                </div>
+                <hr />
+                <div class="form-group is-small">
+                    <label>small phone</label> <input class="is-big" type="phone" name="phone" />
+                </div>
+                <div class="form-group is-small">
+                    <label>small country</label>
+                    <select class="is-big">
+                        <option value="1">Default</option>
+                        <option value="2">OptionA</option>
+                        <option value="3">OptionB</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="sub-section">
+        <h3>Inline by Group 单行的表单</h3>
+
+        <form class="form is-inline" method="post" action="" autocomplete="off">
+            <div class="form-group"><label>Name</label> <input type="text" name="name" /></div>
+            <div class="form-group">
+                <label>Phone</label> <input class="is-small" type="text" name="name" />
+            </div>
+            <div class="form-group">
+                <label>Size</label> <input class="is-big" type="text" name="name" />
+            </div>
+
+            <div class="form-group">
+                <label>Country</label>
+                <select>
+                    <option value="1">Default</option>
+                    <option value="2">OptionA</option>
+                    <option value="3">OptionB</option>
+                </select>
+            </div>
+
+            <div class="form-group form-checkboxes">
+                <label>Local</label>
+                <label class="checkbox"><input type="checkbox" />Check Me</label>
+                <label class="checkbox"><input type="checkbox" />Check You</label>
+                <label class="checkbox"><input type="checkbox" />Check Him</label>
+            </div>
+
+            <div class="form-group form-radios">
+                <label>Local</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+                <label class="checkbox"><input type="radio" />radio him</label>
+            </div>
+
+            <div class="form-group"><label>Interface</label> <textarea rows="6"></textarea></div>
+
+            <div class="form-group form-buttons">
+                <button class="button">Log in</button>
+                <button class="button is-hollow">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="sub-section">
+        <h3>Inline by Inline</h3>
+
+        <form class="form is-inline" method="post" action="" autocomplete="off">
+            <div class="form-group is-inline is-big">
+                <label>Name</label> <input type="text" name="name" />
+            </div>
+
+            <div class="form-group is-inline is-big">
+                <label>Country</label>
+                <select>
+                    <option value="1">Default</option>
+                    <option value="2">OptionA</option>
+                    <option value="3">OptionB</option>
+                </select>
+            </div>
+
+            <div class="form-group is-inline is-big form-radios">
+                <label>Local</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+            </div>
+
+            <div class="form-group form-buttons is-inline is-big">
+                <button class="button">Log in</button>
+                <button class="button is-hollow">Cancel</button>
+            </div>
+        </form>
+
+        <form class="form is-inline" method="post" action="" autocomplete="off">
+            <div class="form-group is-inline">
+                <label>Name</label> <input type="text" name="name" />
+            </div>
+
+            <div class="form-group is-inline">
+                <label>Country</label>
+                <select>
+                    <option value="1">Default</option>
+                    <option value="2">OptionA</option>
+                    <option value="3">OptionB</option>
+                </select>
+            </div>
+
+            <div class="form-group form-buttons is-inline">
+                <button class="button">Log in</button>
+                <button class="button is-hollow">Cancel</button>
+            </div>
+        </form>
+
+
+
+        <form class="form is-inline" method="post" action="" autocomplete="off">
+            <div class="form-group is-inline is-small">
+                <label>Name</label> <input type="text" name="name" />
+            </div>
+
+            <div class="form-group is-inline is-small form-radios">
+                <label>Local</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+                <label class="checkbox"><input type="radio" />radio me</label>
+            </div>
+
+            <div class="form-group is-inline is-small">
+                <label>Country</label>
+                <select>
+                    <option value="1">Default</option>
+                    <option value="2">OptionA</option>
+                    <option value="3">OptionB</option>
+                </select>
+            </div>
+
+            <div class="form-group form-buttons is-inline is-small">
+                <button class="button">Log in</button>
+                <button class="button is-hollow">Cancel</button>
+            </div>
+        </form>
+    </div>
+</section>

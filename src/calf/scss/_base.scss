@@ -1,0 +1,52 @@
+// Base
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: $html-font-size;
+    line-height: $html-line-height;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    overflow-x: hidden;
+    color: $text-color;
+    font-family: $body-font-family;
+    background: $body-bg-color;
+    text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    border-bottom: 1px solid $link-color;
+    outline: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: lighten($link-color, 10%);
+        border-color: lighten($link-color, 10%);
+    }
+
+    &:visited {
+        color: darken($link-color, 10%);
+        border-color: darken($link-color, 10%);
+    }
+
+    &:focus {
+        @include box-shadow();
+    }
+}

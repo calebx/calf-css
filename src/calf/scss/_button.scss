@@ -1,0 +1,113 @@
+$button-font-family: $body-font-family;
+$button-font-size: 1rem;
+$button-base-line: 2.25rem;
+$button-font-weight: 200;
+
+$button-primary-bg: lighten($primary-color, 10%);
+$button-primary-hover-bg: $primary-color;
+$button-primary-text-color: $white;
+
+@mixin button-with-color($bg-color: $button-primary-bg, $hover-bg-color: $button-primary-hover-bg, $text-color: $button-primary-text-color) {
+    color: $text-color;
+    background-color: $bg-color;
+
+    &:visited {
+        color: $text-color;
+        background-color: $bg-color;
+        border-color: transparent;
+    }
+
+    &:focus,
+    &:hover {
+        color: $text-color;
+        background-color: $hover-bg-color;
+        border-color: transparent;
+    }
+
+    &:disabled {
+        color: rgba($text-color, 0.67);
+        background-color: rgba($bg-color, 0.67);
+        cursor: not-allowed;
+
+        &:hover {
+            color: rgba($text-color, 0.75);
+            background-color: rgba($bg-color, 0.75);
+        }
+    }
+
+    &.is-hollow {
+        color: $bg-color;
+        background-color: $text-color;
+        border-color: $bg-color;
+
+        &:visited {
+            color: $bg-color;
+            background-color: $text-color;
+            border-color: $bg-color;
+        }
+
+        &:focus,
+        &:hover {
+            color: $hover-bg-color;
+            background-color: $text-color;
+            border-color: $hover-bg-color;
+        }
+
+        &:disabled {
+            color: rgba($bg-color, 0.67);
+            background-color: rgba($text-color, 0.67);
+            border-color: rgba($bg-color, 0.67);
+
+            &:hover {
+                color: rgba($bg-color, 0.75);
+                background-color: rgba($text-color, 0.75);
+                border-color: rgba($bg-color, 0.75);
+            }
+        }
+    }
+}
+
+input[type="submit"] {
+    width: auto;
+}
+
+button,
+input[type="submit"],
+.button {
+    @include button-with-color();
+
+    display: inline-block;
+    min-height: $button-base-line;
+    padding: 0 1rem;
+    font-weight: $button-font-weight;
+    font-size: $button-font-size;
+    font-family: $button-font-family;
+    line-height: $button-base-line;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:active {
+        @include box-shadow();
+    }
+}
+
+// DEMO: how to theme button in group
+$button-danger-bg: $red;
+$button-danger-hover-bg: darken($red, 10%);
+$button-danger-text-color: $white;
+
+button.is-danger,
+input[type="submit"].is-danger,
+.button.is-danger {
+    @include button-with-color($button-danger-bg, $button-danger-hover-bg, $button-danger-text-color);
+}
