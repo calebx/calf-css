@@ -4,6 +4,7 @@
   "description": "calf style only",
   "private": true,
   "author": "caleb.xiang",
+  "main": "src/calf/scss/index.scss",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open",

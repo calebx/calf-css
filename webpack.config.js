@@ -4,8 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        app: "./src/calf/scss/index.scss",
-        calf: "./src/calf/index.tsx"
+        app: "./src/calf/index.tsx"
     },
     output: {
         filename: "[name].bundle.js",
@@ -57,8 +56,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            chunks: ["calf"],
-            filename: "calf.html",
             title: "calf.css",
             template: "src/calf/index.html"
         }),
