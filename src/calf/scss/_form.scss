@@ -1,17 +1,11 @@
-$input-font-size-l: 1.5rem;
-$input-font-size: 1.125rem;
-$input-font-size-s: 1rem;
+$input-font-size: 1.125rem !default;
+$input-height: 2.5rem !default;
+$input-padding-lr: 0.5rem !default;
 
-$input-height-l: 3.5rem;
-$input-height: 2.5rem;
-$input-height-s: 2.25rem;
+$input-background-color: $white !default;
+$input-border-color: $gray !default;
 
-$input-padding-lr: 0.5rem;
-
-$input-background-color: $white;
-$input-border-color: $gray;
-
-$inline-form-group-label-width: 10rem;
+$inline-form-group-label-width: 10rem !default;
 
 fieldset {
     margin: 2rem auto;
@@ -111,7 +105,7 @@ input[type="file"] {
 input[type="radio"],
 input[type="checkbox"] {
     position: relative;
-    bottom: 0.175rem;
+    bottom: 0.15rem;
     display: inline-block;
     width: auto;
     height: auto;
@@ -221,12 +215,12 @@ form.is-inline {
     }
 }
 
-$input-height-l: 3.5rem;
-$input-height-s: 2.25rem;
-$input-font-size-l: 1.5rem;
-$input-font-size-s: 1rem;
-$input-padding-lr-l: 0.5rem;
-$input-padding-lr-s: 0.5rem;
+$input-height-l: 3.5rem !default;
+$input-height-s: 2.25rem !default;
+$input-font-size-l: 1.5rem !default;
+$input-font-size-s: 1rem !default;
+$input-padding-lr-l: 0.5rem !default;
+$input-padding-lr-s: 0.5rem !default;
 
 .form-group.is-big {
     @include form-group-size($input-height-l, $input-font-size-l, $input-padding-lr-l);
