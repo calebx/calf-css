@@ -22,16 +22,12 @@ body {
 
 html,
 body {
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
     text-size-adjust: none;
 }
 
 a {
     color: $link-color;
     text-decoration: none;
-    border-bottom: 1px solid $link-color;
     outline: none;
 
     &:active,

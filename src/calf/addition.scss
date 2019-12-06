@@ -19,72 +19,84 @@
     top: 1rem;
 
     ul > li {
-        margin: 0.5rem 1rem;
-        a {
-            border-bottom: none;
-        }
+        padding: 0.5rem 1rem;
     }
 }
 
 .page-content {
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
 }
 
 .logo-section {
-    line-height: 1;
-    
     .logo {
         display: inline-block;
+        vertical-align: top;
     }
 }
 
 .sub-section {
-    border-top: 2px dotted lighten($blue, 50%);
     margin-bottom: 2rem;
+    border-top: 2px dotted lighten($blue, 50%);
 }
 
 // color demo card
 .color-card {
     width: 100%;
     padding-top: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
 
     &.bg-red {
         background: $red;
     }
+
     &.bg-green {
         background: $green;
     }
+
     &.bg-blue {
         background: $blue;
     }
-    &.bg-black {
-        background: $black;
-    }
+
     &.bg-black-s {
         background: $black-s;
     }
+
+    &.bg-black {
+        background: $black;
+    }
+
+    &.bg-black-l {
+        background: $black-l;
+    }
+
     &.bg-white {
         background: $white;
     }
+
     &.bg-gray-xxs {
         background: $gray-xxs;
     }
+
     &.bg-gray-xs {
         background: $gray-xs;
     }
+
     &.bg-gray-s {
         background: $gray-s;
     }
+
     &.bg-gray {
         background: $gray;
     }
+
     &.bg-gray-l {
         background: $gray-l;
     }
+
     &.bg-gray-xl {
         background: $gray-xl;
     }
+
     &.bg-gray-xxl {
         background: $gray-xxl;
     }
@@ -98,9 +110,11 @@
     .columns > .col-3 & {
         background: lighten($red, 33%);
     }
+
     .columns > .col-2 & {
         background: lighten($green, 33%);
     }
+
     .columns > .col-1 & {
         background: lighten($black-s, 50%);
     }

@@ -3,12 +3,12 @@
 
     <div class="sub-section">
         <h3>Headling 标题</h3>
-        <h1 class="h1">H1 Heading 标题 #1 42px</h1>
-        <h2 class="h2">H2 Heading 标题 #2 28px</h2>
-        <h3 class="h3">H3 Heading 标题 #3 22px</h3>
-        <h4 class="h4">H4 Heading 标题 #4 16px</h4>
-        <h5 class="h5">H5 Heading 标题 #5 14px</h5>
-        <h6 class="h6">H6 Heading 标题 #6 12px</h6>
+        <h1 class="h1">H1 Heading 标题 #1 42px (6 * 7)</h1>
+        <h2 class="h2">H2 Heading 标题 #2 28px (4 * 7)</h2>
+        <h3 class="h3">H3 Heading 标题 #3 21px (3 * 7)</h3>
+        <h4 class="h4">H4 Heading 标题 #4 18px (4 + 2 * 7)</h4>
+        <h5 class="h5">H5 Heading 标题 #5 1rem == p tag == 14px</h5>
+        <h6 class="h6">H6 Heading 标题 #6 12px == small tag</h6>
         <pre><code class="html">&lt;h1 class="h1"&gt;...&lt;/h1&gt;<br>&lt;h2 class="h2"&gt;...&lt;/h2&gt;</code></pre>
     </div>
 
@@ -43,19 +43,20 @@
                 The advance of technology is based on making it fit in so that you don't really even
                 notice it, so it's part of everyday life.
             </p>
-            <cite>- Bill Gates</cite>
+            <p><cite>- Bill Gates</cite></p>
         </blockquote>
         <blockquote>
-            <p>黑夜给了我黑色的眼睛，我却用它寻找光明。- 顾城</p>
+            <p>黑夜给了我黑色的眼睛，我却用它寻找光明。</p>
+            <p><cite>- 顾城</cite></p>
         </blockquote>
-        <pre><code class="html">&lt;blockquote&gt;&lt;p&gt;黑夜...&lt;/p&gt;&lt;cite&gt;- 顾城&lt;/cite&gt;&lt;/blockquote&gt;</code></pre>
+        <pre><code class="html">&lt;blockquote&gt;&lt;p&gt;黑夜...&lt;/p&gt;&lt;p&gt;&lt;cite&gt;- 顾城&lt;/cite&gt;&lt;/p&gt;&lt;/blockquote&gt;</code></pre>
     </div>
 
     <div class="sub-section">
         <h3>ul > li & ol > li 列表</h3>
         <div class="columns is-gapped">
             <div class="column col-4">
-                <ul>
+                <ul class="is-big">
                     <li>list item 1</li>
                     <li>
                         list item 2
@@ -67,10 +68,10 @@
                     </li>
                     <li><a href="javascript:;">list item 3</a></li>
                 </ul>
-                <pre><code class="html">&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</code></pre>
+                <pre><code class="html">&lt;ul class="is-big"&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</code></pre>
             </div>
             <div class="column col-4">
-                <ul class="is-unstyled">
+                <ul class="is-unstyled is-big">
                     <li>list item 1</li>
                     <li>
                         list item 2
@@ -82,10 +83,10 @@
                     </li>
                     <li>list item 3</li>
                 </ul>
-                <pre><code class="html">&lt;ul class="is-unstyled"&gt;&lt;/ul&gt;</code></pre>
+                <pre><code class="html">&lt;ul class="is-big is-unstyled"&gt;&lt;/ul&gt;</code></pre>
             </div>
             <div class="column col-4">
-                <ol class="is-big">
+                <ol">
                     <li>list item 1</li>
                     <li>
                         list item 2
@@ -97,7 +98,7 @@
                     </li>
                     <li>list item 3</li>
                 </ol>
-                <pre><code class="html">&lt;ol class="is-big"&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></pre>
+                <pre><code class="html">&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></pre>
             </div>
         </div>
     </div>
@@ -124,11 +125,11 @@
                     <a href="javascript:;">本原链接</a>
                 </p>
 
-                <p class="is-large">Large P Tag 一个很大很大</p>
-                <p class="is-big">Big P Tag 一个很大</p>
-                <p>Just a P tag 一个很正常</p>
-                <p class="is-small">Small P Tag 一个很小</p>
-                <p class="is-centered">Centered P Tag 一个居中</p>
+                <p class="is-large">Large P Tag 一个超级大的段落</p>
+                <p class="is-big">Big P Tag 一个很大的段落</p>
+                <p>Just a P tag 一个正常的段落</p>
+                <p class="is-small">Small P Tag 一个很小的段落</p>
+                <p class="is-centered">Centered P Tag 一个居中的段落</p>
             </div>
         </div>
         <pre><code class="pug">p.is-muted<br>a.is-muted<br>p.is-large<br>p.is-big<br>p.is-small<br>p.is-centered</code></pre>

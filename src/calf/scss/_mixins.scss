@@ -1,7 +1,7 @@
-@mixin box-shadow($color: $primary-color, $width: 1px) {
-    box-shadow: 0 0 0 $width rgba($color, 0.1);
+@mixin box-shadow($color: $primary-color, $width: 2px) {
+    box-shadow: 0 0 $width 0 rgba($color, 0.2);
 }
 
-@mixin box-inset-shadow($color: $primary-color, $width: 1px) {
-    box-shadow: inset 0 0 0 $width rgba($color, 0.1);
+@mixin box-inset-shadow($color: $primary-color, $width: 2px) {
+    box-shadow: inset 0 0 $width 0 rgba($color, 0.2);
 }

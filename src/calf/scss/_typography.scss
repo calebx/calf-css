@@ -26,11 +26,11 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 h6 {
@@ -39,7 +39,7 @@ h6 {
 
 // Paragraphs
 p {
-    margin: 0.75em 0;
+    margin: 0.75rem 0;
 }
 
 // Semantic text elements
@@ -57,13 +57,21 @@ abbr[title] {
 
 // Blockquote
 blockquote {
-    margin-left: 0;
-    padding: 1px 1.5rem 0.75rem; // 1px is for avoid merging margins of p tag and blockquote tag
+    margin: 0.75rem 0;
+    padding: 0 1.5rem; // 1px is for avoid merging margins of p tag and blockquote tag
     border-left: $border-width solid lighten($primary-color, 50%);
 
-    p:last-child {
-        margin-bottom: 0.25em;
+    &::before,
+    &::after {
+        display: table;
+        clear: both;
+        content: "";
     }
+}
+
+// Pre
+pre {
+    margin: 1.5rem 0;
 }
 
 // Lists
@@ -105,7 +113,7 @@ code {
 
 // Hr
 hr {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     border: 0;
     border-top: 1px solid $border-color;
 }
@@ -113,13 +121,12 @@ hr {
 // Helpers
 a.is-muted {
     color: $black-s;
-    border-bottom: 1px solid $gray-xl;
+    text-decoration: underline;
 
     &:focus,
     &:hover,
     &:active {
         color: lighten($link-color, 15%);
-        border-color: lighten($link-color, 15%);
     }
 }
 
@@ -128,16 +135,16 @@ a.is-muted {
 
     a.is-muted {
         color: $gray-xl;
-        border-bottom: 1px solid $gray-xl;
+        text-decoration: underline;
     }
 }
 
 .is-large {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .is-big {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 .is-small {

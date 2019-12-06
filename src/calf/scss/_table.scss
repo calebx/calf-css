@@ -1,4 +1,4 @@
-$table-border: 1px solid $gray !default;
+$table-border: 1px solid $gray-l !default;
 
 .table {
     width: 100%;
@@ -16,7 +16,7 @@ $table-border: 1px solid $gray !default;
     &.is-striped {
         tbody {
             tr:nth-child(odd) {
-                background-color: $gray-xxs;
+                background-color: $gray-xs;
             }
         }
     }
@@ -24,7 +24,7 @@ $table-border: 1px solid $gray !default;
     &.is-hover {
         tbody {
             tr:hover {
-                background-color: $gray-xs;
+                background-color: $gray-s;
             }
         }
     }
@@ -36,13 +36,5 @@ $table-border: 1px solid $gray !default;
         th {
             border: $table-border;
         }
-    }
-
-    // Scollable tables
-    &.is-scroll {
-        display: block;
-        padding-bottom: 0.75rem;
-        overflow-x: auto;
-        white-space: nowrap;
     }
 }

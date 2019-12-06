@@ -2,7 +2,7 @@ $blue: #004883 !default; // Pepsi blue;
 $red: #e32934 !default; // Pepsi red;
 $green: #5ecc62 !default; // basecamp green;
 
-$white: #fefefe !default;
+$white: #fff !default;
 
 $gray-xxs: #fafaf9 !default;
 $gray-xs: #f7f7f6 !default;
@@ -14,9 +14,10 @@ $gray-xxl: #4c4c4b !default;
 
 $black-s: #232323 !default;
 $black: #121212 !default;
+$black-l: #000 !default;
 
 $primary-color: $blue !default;
 $link-color: $blue !default;
 $body-bg-color: $white !default;
-$text-color: $black-s !default;
-$border-color: $gray !default;
+$text-color: $black !default;
+$border-color: $gray-l !default;

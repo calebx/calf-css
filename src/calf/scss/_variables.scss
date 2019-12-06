@@ -1,8 +1,8 @@
 $html-font-size: 14px !default;
 $html-line-height: 1.5 !default;
 
-$border-width: 2px !default;
 $border-width-thin: 1px !default;
+$border-width: 2px !default;
 $border-radius: 2px !default;
 $border-radius-big: 4px !default;
 
@@ -13,9 +13,6 @@ $sans-font-family: "Noto Serif SC", "Noto Serif", "Open Sans", X-LocaleSpecific,
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 $fallback-font-family: "Helvetica Neue", sans-serif !default;
 $cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
-$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family !default;
-$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
-$cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
 
 $body-font-family: $cjk-zh-hans-font-family !default;
 $head-font-family: $sans-font-family, $body-font-family !default;

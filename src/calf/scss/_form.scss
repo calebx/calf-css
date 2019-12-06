@@ -28,6 +28,7 @@ label {
     display: block;
     color: $black-s;
     font-family: $head-font-family;
+    line-height: 2.5;
 
     &.checkbox,
     &.radio {
@@ -105,12 +106,20 @@ input[type="file"] {
 input[type="radio"],
 input[type="checkbox"] {
     position: relative;
-    bottom: 0.15rem;
+    bottom: 0.175em;
     display: inline-block;
     width: auto;
     height: auto;
     margin-right: 0.5rem;
     vertical-align: middle;
+
+    .is-big & {
+        bottom: 0.125em;
+    }
+
+    .is-small & {
+        bottom: 0.15em;
+    }
 }
 
 form {
