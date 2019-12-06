@@ -1,14 +1,14 @@
 {
   "name": "calf-css",
-  "version": "0.0.3",
-  "description": "calf style only",
-  "private": true,
+  "version": "0.0.4",
+  "description": "calf css for basic html",
   "author": "caleb.xiang",
+  "repository": "https://github.com/calebx/calf-css.git",
   "main": "src/calf/scss/index",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "lint": "stylelint ./src/calf/scss/*.scss"
+    "lint": "stylelint -f=verbose ./src/calf/scss/**/*.scss"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
