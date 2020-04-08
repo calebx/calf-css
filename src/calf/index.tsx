@@ -1,4 +1,3 @@
-import "./addition.scss";
 import "./scss/index.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
